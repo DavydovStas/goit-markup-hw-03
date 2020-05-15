@@ -1,0 +1,157 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста  #212121;
+ */
+/* основной фон  #FFFFFF  */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA; */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+address {
+  font-style: normal;
+}
+
+.logo {
+  color: var(--title-text-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.logo:focus,
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+/* Хедер */
+
+.header .navigation {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: var(--accent-color);
+}
+
+.navigation .link {
+  color: inherit;
+}
+
+.adres .link:hover,
+.adres .link:focus {
+  color: var(--accent-color);
+}
+
+.adres .link {
+  color: inherit;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.adres p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Секция Футер */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .logo {
+  color: #ffffff;
+}
+
+.city {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.adress-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer .title {
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.join .link {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.join .link:hover,
+.join .link:focus {
+  color: var(--accent-color);
+}
+
+.form .link {
+  color: #ffffff;
+  background-color: var(--accent-color);
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.form .link:focus {
+  background-color: var(--accent-color);
+}
+
+.developed-by {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+}

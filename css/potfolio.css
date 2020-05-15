@@ -1,0 +1,50 @@
+/* Выделение активной страницы */
+
+.current {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+/* Секция проектов */
+
+.button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.button:focus,
+.button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.projects .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects .discription {
+  color: #757575;
+
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.projects .text {
+  color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
+
+  font-size: 18px;
+  line-height: 1.56;
+}
+.projects .text:hover {
+  background-color: var(--accent-color);
+}

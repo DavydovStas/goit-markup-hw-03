@@ -1,0 +1,127 @@
+/* Выделение активной страницы */
+
+.current {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+/* Герой */
+
+.hero {
+  color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
+}
+
+.hero p {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .link {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero .link:focus {
+  color: var(--accent-color);
+}
+
+.hero .link {
+  color: inherit;
+}
+
+/* Секция Преимуществ компании */
+
+.advantages .title {
+  color: var(--title-text-color);
+}
+
+.advantages h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+/* Cекция Сфер Деятельности */
+
+.activity .grand-title,
+.activity .title {
+  color: var(--title-text-color);
+}
+
+.activity .grand-title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.activity .title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Секция Команды */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team .grand-title,
+.team .title {
+  color: var(--title-text-color);
+}
+
+.team .grand-title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.cpecialazed {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team .link {
+  color: inherit;
+}
+
+.team .link:hover,
+.team .link:focus {
+  color: var(--accent-color);
+}
+
+/* Секция Постоянных клиентов */
+
+.clients .title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.clients .link {
+  color: inherit;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  color: var(--accent-color);
+}
