@@ -21,6 +21,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Стили общих элементов */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
 ul {
   list-style: none;
 }
@@ -32,6 +43,7 @@ a {
 
 address {
   font-style: normal;
+  display: flex;
 }
 
 .logo {
@@ -44,6 +56,11 @@ address {
   letter-spacing: 0.03em;
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+}
+
 .logo:focus,
 .logo:hover {
   color: var(--accent-color);
@@ -54,6 +71,26 @@ address {
 }
 
 /* Хедер */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation,
+.navigation .list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .list {
+  margin-left: 86px;
+  padding: 32px 0px;
+}
+
+.navigation li + li {
+  margin-left: 50px;
+}
 
 .header .navigation {
   color: var(--title-text-color);
@@ -78,6 +115,22 @@ address {
   color: var(--accent-color);
 }
 
+/* .header .address {
+  display: flex;
+} */
+
+.adres {
+  margin-left: auto;
+}
+
+.adres a {
+  display: flex;
+}
+
+.adres .link + .link {
+  margin-left: 30px;
+}
+
 .adres .link {
   color: inherit;
 
@@ -100,6 +153,15 @@ address {
   background-color: #2f303a;
 }
 
+.footer .container {
+  flex-wrap: wrap;
+}
+
+.adress-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer .logo {
   color: #ffffff;
 }
@@ -109,6 +171,7 @@ address {
 
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
 }
 
 .adress-footer .link {
@@ -125,6 +188,24 @@ address {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+}
+
+.join li {
+  display: flex;
+}
+
+/* .join > li {
+  flex-direction: column;
+} */
+
+.join .list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .join .link {
@@ -150,7 +231,14 @@ address {
   background-color: var(--accent-color);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .developed-by {
+  margin-top: 18;
+
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;

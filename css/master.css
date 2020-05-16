@@ -12,7 +12,10 @@
   background-color: var(--primary-text-color);
 }
 
-.hero p {
+.hero h1 {
+  margin: 0;
+
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -22,6 +25,11 @@
 }
 
 .hero .link {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -39,6 +47,10 @@
 }
 
 /* Секция Преимуществ компании */
+
+.advantages .container {
+  display: flex;
+}
 
 .advantages .title {
   color: var(--title-text-color);
@@ -111,10 +123,27 @@
 
 /* Секция Постоянных клиентов */
 
+.clients .container {
+  padding: 94px 0;
+}
+
 .clients .title {
+  margin: 0;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+}
+
+.clients ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0 0 200px;
+  padding: 0;
+}
+
+.clients li + li {
+  margin-left: 30px;
 }
 
 .clients .link {
