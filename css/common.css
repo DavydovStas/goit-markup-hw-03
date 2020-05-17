@@ -30,7 +30,7 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 ul {
@@ -277,9 +277,9 @@ h6 {
 }
 
 .developed-by {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 46px;
-  margin-bottom: 21px;
+  padding-bottom: 21px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
