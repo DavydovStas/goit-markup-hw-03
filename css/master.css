@@ -8,20 +8,24 @@
 /* Герой */
 
 .hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   color: var(--primary-white-color);
   background-color: var(--primary-text-color);
 }
 
-.hero h1 {
+.hero .title {
   margin: 0;
 
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .hero .link {
@@ -48,23 +52,38 @@
 
 /* Секция Преимуществ компании */
 
+/* .advantages * {
+  outline: 1px black solid;
+} */
+
 .advantages .container {
   display: flex;
+  text-align: left;
+  padding-top: 94px;
+}
+
+.advantages li + li {
+  margin-left: 30px;
+}
+
+.advantages li {
+  width: 278px;
 }
 
 .advantages .title {
-  color: var(--title-text-color);
-}
+  margin-top: 30px;
 
-.advantages h3 {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
+  color: var(--title-text-color);
 }
 
 .advantages p {
+  margin-top: 10px;
+
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
 }
 
 /* Cекция Сфер Деятельности */
@@ -74,9 +93,26 @@
   color: var(--title-text-color);
 }
 
+.activity .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .activity .grand-title {
+  display: inline-block;
+  /* margin-top: 94px; */
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
+}
+
+.activity ul {
+  display: flex;
+}
+
+.activity li + li {
+  margin-left: 30px;
 }
 
 .activity .title {
@@ -89,6 +125,21 @@
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .team-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.team-list > li + li {
+  margin-left: 30px;
+}
+
+.team-list ul {
+  display: flex;
 }
 
 .team .grand-title,
@@ -102,14 +153,23 @@
 }
 
 .team .title {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .cpecialazed {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 1.19;
+}
+
+.team-list ul {
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .team .link {
@@ -132,14 +192,18 @@
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .clients ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 0 0 200px;
+  margin-top: 50px;
   padding: 0;
+}
+
+.clients li {
+  width: 175px;
 }
 
 .clients li + li {

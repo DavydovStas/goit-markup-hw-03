@@ -24,6 +24,7 @@ body {
 /* Стили общих элементов */
 
 .container {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
@@ -44,6 +45,18 @@ a {
 address {
   font-style: normal;
   display: flex;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
 }
 
 .logo {
@@ -150,16 +163,27 @@ address {
 /* Секция Футер */
 
 .footer {
+  padding-top: 48px;
   background-color: #2f303a;
 }
 
 .footer .container {
-  flex-wrap: wrap;
+  display: flex;
+}
+
+.logo-adres {
+  text-align: left;
+  margin-right: 179px;
+}
+
+.adress-footer > * {
+  margin-top: 9px;
 }
 
 .adress-footer {
   display: flex;
   flex-direction: column;
+  min-width: 231px;
 }
 
 .footer .logo {
@@ -171,7 +195,7 @@ address {
 
   font-size: 14px;
   line-height: 1.71;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .adress-footer .link {
@@ -191,8 +215,10 @@ address {
 }
 
 .join {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 8px;
+  margin-right: 102px;
 }
 
 .join li {
@@ -205,7 +231,8 @@ address {
 
 .join .list {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 21px;
+  /* flex-wrap: wrap; */
 }
 
 .join .link {
@@ -217,7 +244,18 @@ address {
   color: var(--accent-color);
 }
 
+/* .form .title {
+  min-width: 231px;
+} */
+
 .form .link {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-top: 21px;
+  text-align: center;
+
   color: #ffffff;
   background-color: var(--accent-color);
 
@@ -234,10 +272,16 @@ address {
 .form {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  margin-top: 8px;
 }
 
 .developed-by {
-  margin-top: 18;
+  display: inline-block;
+  margin-top: 46px;
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
