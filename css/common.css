@@ -181,7 +181,7 @@ h6 {
 }
 
 .adress-footer {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   min-width: 231px;
 }
@@ -282,6 +282,7 @@ h6 {
   margin-bottom: 21px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
