@@ -9,12 +9,13 @@
 
 .filter .container {
   padding-top: 94px;
+  padding-bottom: 94px;
   text-align: left;
 }
 
 .button-list {
   display: flex;
-  margin-left: 295px;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -79,7 +80,7 @@
 }
 
 .projects .text {
-  width: 380px;
+  width: 370px;
   height: 168px;
 
   color: var(--primary-white-color);
